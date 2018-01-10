@@ -1,0 +1,19 @@
+Pipe and I/O Redirection:
+
++ ls|grep list
+
++ wc</etc/passwd
+  40   69 2234
+
++ free
+              total        used
+Mem:        1838088     1392592
+Swap:       1885180      103440
+
++ cat< /proc/cpuinfo
+cpu cores	: 1
+
++ find *.jpg |wc -l
+find: ‘*.jpg’: No such file or directory
+0
+
