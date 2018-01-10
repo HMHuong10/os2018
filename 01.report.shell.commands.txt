@@ -1,0 +1,68 @@
+Basic commands:
+
+echo hello world
+hello world
+
+passwd
+Changing password for hmh.
+(current) UNIX password: 
+Enter new UNIX password: 
+Retype new UNIX password: 
+Password unchanged
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+
+date
+Wed Jan 10 8:57:16 ICT 2018
+
+hostname
+hmh-VirtualBox
+
+arch
+x86_64
+
+uname -a
+Linux hmh-VirtualBox 4.10.0-28-generic #32~16.04.2-Ubuntu SMP Thu Jul 20 10:19:48 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+
+dmesg
+[   18.070332] floppy0: no floppy controllers found
+[   19.933787] Adding 1885180k swap on /dev/sda5.  Priority:-1 extents:1 across:1885180k FS
+[   29.145960] IPv6: ADDRCONF(NETDEV_UP): enp0s3: link is not ready
+[   29.148752] IPv6: ADDRCONF(NETDEV_UP): enp0s3: link is not ready
+[   29.155232] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[   29.155587] IPv6: ADDRCONF(NETDEV_CHANGE): enp0s3: link becomes ready
+[  894.471048] e1000: enp0s3 NIC Link is Down
+[  898.503661] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+
+uptime
+ 09:39:48 up 39 min,  1 user,  load average: 0,44, 0,33, 0,34
+
+who am i
+
+whoami
+hmh
+
+who
+hmh      tty7         2018-01-10 08:11 (:0)
+
+id
+uid=1000(hmh) gid=1000(hmh) groups=1000(hmh),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),113(lpadmin),128(sambashare)
+
+last
+hmh      tty7         :0               Wed Jan 10 08:11    gone - no logout
+reboot   system boot  4.10.0-28-generi Wed Jan 10 08:20   still running
+hmh      tty7         :0               Wed Jan 10 07:42 - crash  (00:38)
+reboot   system boot  4.10.0-28-generi Wed Jan 10 07:51   still running
+
+wtmp begins Wed Jan 10 07:51:33 2018
+
+finger
+The program 'finger' is currently not installed. You can install it by typing:
+sudo apt install finger
+
+w
+ 09:55:01 up 54 min,  1 user,  load average: 1,61, 0,72, 0,53
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+hmh      tty7     :0               08:11    1:33m  2:16   0.19s /sbin/upstart -
+
