@@ -1,0 +1,22 @@
++ ~$ cat /proc/sched_debug|grep systemd
+
+         systemd     1       421.762762      1975   120         0.000000      1739.750072         0.000000 0 0 /autogroup-2
+ systemd-journal   228       147.303998       767   120         0.000000       148.503514         0.000000 0 0 /autogroup-6
+   systemd-udevd   250      1730.142056       868   120         0.000000       280.788618         0.000000 0 0 /autogroup-11
+ systemd-timesyn   316        15.323364        66   120         0.000000        14.270963         0.000000 0 0 /autogroup-27
+  systemd-logind   645        39.753342       477   120         0.000000        41.003346         0.000000 0 0 /autogroup-36
+         systemd  1201        17.934199        23   120         0.000000        18.057450         0.000000 0 0 /autogroup-90
+
++ ~$ cat /proc/sched_debug|grep systemd| awk '{print $4}'
+1976
+768
+868
+66
+477
+23
+
++ ~$ cat /proc/1/sched| grep switches
+nr_switches                                  :                 1977
+nr_voluntary_switches                        :                 1168
+nr_involuntary_switches                      :                  809
+
