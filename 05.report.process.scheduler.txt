@@ -13,8 +13,8 @@ nr_switches                                  :                 1990
 nr_voluntary_switches                        :                 1181
 nr_involuntary_switches                      :                  809
 
-+ $ cat /proc/1201/sched| grep switches nr_switches                                  :                   23
++ $ cat /proc/1201/sched| grep switches
+nr_switches                                  :                   23
 nr_voluntary_switches                        :                   10
 nr_involuntary_switches                      :                   13
-
 
