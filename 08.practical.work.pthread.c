@@ -67,7 +67,6 @@ void *thread_consumer(void *param){
 int main(){
 	pthread_t tid;
 	pthread_create(&tid, NULL, thread_producer, NULL);
-	pthread_join(tid, NULL);
 	pthread_t tid1;
 	pthread_create(&tid1, NULL, thread_consumer, NULL);
 	pthread_join(tid1, NULL);
